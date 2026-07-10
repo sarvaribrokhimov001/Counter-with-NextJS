@@ -1,26 +1,79 @@
-@import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(40, 39, 39);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 180px;
+}
+
+.container {
+    width: 400px;
+    height: 180px;
+    background-color: black;
+    color: cyan;
+    border-radius: 40px;
+}
+
+.counter {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+button {
+    width: 80px;
+    height: 30px;
+    background-color: black;
+    border-radius: 50px;
+    font-weight: bold;
+    border: none;
+}
+
+.decrement__btn {
+    color: red;
+    border: 5px solid red;
+    font-size: 20px;
+}
+
+.decrement__btn:hover {
+    background-color: red;
+    color: white;
+    border: 5px solid white;
+    transition: all 0.5s ease;
+}
+
+.increment__btn {
+    color: lime;
+    border: 5px solid lime;
+    font-size: 20px;
+}
+
+.increment__btn:hover {
+    background-color: lime;
+    color: white;
+    border: 5px solid white;
+    transition: all 0.5s ease;
+}
+
+.reset__btn {
+    color: yellow;
+    border: 5px solid yellow;
+    font-size: 16px;
+}
+
+.reset__btn:hover {
+    background-color: yellow;
+    color: white;
+    border: 5px solid white;
+    transition: all 0.5s ease;
 }
